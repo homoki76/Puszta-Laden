@@ -8,20 +8,22 @@
     <title>Puszta Laden Wetterau</title>
     <link rel="icon" type="image/x-icon" href="images/flag-hu-heart.png">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body id="top">
 <header>
     <div id="header">
         <div id="red"></div>
         <h1><a href="index.html">Puszta Laden Wetterau</a></h1>
-        <img id="pattern" src="images/kalocsa-pattern1.jpg" width="105" height="50" alt="Hungarian embroidered pattern">
+        <a href="index.html"><img id="pattern" src="images/kalocsa-pattern1.jpg" width="105" height="50" 
+            alt="Hungarian embroidered pattern"></a>
         <div id="navi-box">
             <ul id="navigation">
                 <li><a href="actual.html">Aktuális</a></li>
-                <li><a href="products">Termékek</a></li>
+                <li><a href="products.html">Termékek</a></li>
                 <li><a href="info.html">Információ</a></li>
-                <li><a href="gallery.html">Galéria</a></li>
                 <li><img src="images/globe.png" width="21" height="21">
                     <ul id="lang-dd">
                         <li>
@@ -58,14 +60,13 @@
         </div>
 
         <!-- Mobile navigation -->
-        <img id="ham-icon" width="55" height="50" src="images/hamburger-icon.png" alt="Hamburger Icon">
-        <img id="close-icon" width="55" height="50" src="images/close-icon.png" alt="Close Icon">
+        <img id="ham-icon" width="32" height="30" src="images/hamburger-icon.png" alt="Hamburger Icon">
+        <img id="close-icon" width="32" height="30" src="images/close-icon.png" alt="Close Icon">
         <div id="mobile-dropdown">
             <ul>
                 <li><a href="actual.html">Aktuális</a></li>
-                <li><a href="products">Termékek</a></li>
+                <li><a href="products.html">Termékek</a></li>
                 <li><a href="info.html">Információ</a></li>
-                <li><a href="gallery.html">Galéria</a></li>
                 <li><img src="images/globe.png" width="21" height="21">
                     <ul id="lang-dd">
                         <li>
@@ -110,11 +111,7 @@
                 <h3>Csemege téliszalámi</h3>
                 <p>Ár: <span class="old-price">€6,99</span><span class="new-price">€4,99</span></p> 
             </div>
-            <div class="product-box">
-                <img src="images/salami.jpg">
-                <h3>Csemege téliszalámi</h3>
-                <p>Ár: <span class="old-price">€6,99</span><span class="new-price">€4,99</span></p> 
-            </div>
+            
         </section>
     </div>
 </aside>
@@ -122,55 +119,23 @@
     <div id="main">
         <div class="wrapper">
             <div class="col_4_5">
-                <h1>Magyar élelmiszerek a Puszta Laden Wetterau kínálatából</h1>
-                <div class="slideshow-container">
-                    <div class="slideshow-inner">
-                        <div class="mySlides fade">
-                            <img  src='images/img1.jpg' style='width: 100%;'>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                            <img  src='images/img2.jpg' style='width: 100%;'>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                            <img  src='images/img3.jpg' style='width: 100%;'>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                            <img  src='images/img4.jpg' style='width: 100%;'>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <img  src='images/img5.jpg' style='width: 100%;'>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <img  src='images/img6.jpg' style='width: 100%;'>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <img  src='images/img7.jpg' style='width: 100%;'>
-                        </div>
+                <h1 id="main-title">Üdvözöljük a Puszta Laden Wetterau honlapján!</h1>
+                <h2 id="mobile-title">
+                    Magyar élelmiszerek a közelben
+                </h2>
+                <img id="pattern-mobile" src="images/kalocsa-pattern1.jpg" width="105" height="50" alt="Hungarian embroidered pattern">
+                    <div class="col_1_2">
+                        <h1>Több, mint paprika</h1>
+                        <p>Magyar élelmiszereket az akácméztől a Zwack Unicumig 
+                            talál boltunkban! Természetesen Tokaji borok, szalámi, 
+                            kolbász és paprika sem hiányoznak a kínálatunkból. 
+                        </p>
+                        <a class="article-button" href="products.html">Ismerje meg választékunkat</a>
                     </div>
-                    
-                    <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
-                    <a class="next" onclick='plusSlides(1)'>&#10095;</a>
-                    
-                    <br/>
-                    
-                    <div style='text-align: center;'>
-                    <span class="dot" onclick='currentSlide(1)'></span>
-                    <span class="dot" onclick='currentSlide(2)'></span>
-                    <span class="dot" onclick='currentSlide(3)'></span>
-                    <span class="dot" onclick='currentSlide(4)'></span>
-                    <span class="dot" onclick='currentSlide(5)'></span>
-                    <span class="dot" onclick='currentSlide(6)'></span>
-                    <span class="dot" onclick='currentSlide(7)'></span>
+                    <div class="col_2_2">
+                        <img id="paprika-img" src="images/paprika.jpg" alt="Red paprika">                        
                     </div>
-                    
-                </div>
-                
+
                 <div id="news-wrapper">
                     <div class="news-box">
                         <h3>Újonnan érkezett áruink</h3>
@@ -203,35 +168,24 @@
                         <a class="article-button" href="#">Részletek</a>
                     </div>
                 </div>
-                <div class="article-wrapper">
-                    <div class="article-box">
-                        <h2>Több, mint paprika</h2>
-                        <p>Magyar élelmiszereket az akácméztől a Zwack Unicumig 
-                            talál boltunkban! Természetesen Tokaji borok, szalámi, 
-                            kolbász és paprika sem hiányoznak a kínálatunkból. 
-                        </p>
-                        <a class="article-button" href="products.html">Ismerje meg választékunkat</a>
-                    </div>
-                    <div class="article-box">
-                        <img id="paprika-img" src="images/paprika.jpg" alt="Red paprika">                        
-                    </div>
+                
+                
+                <div class="col_1_2">
+                    <img id="open-img" src="images/shop.jpg" alt="Entrance of Puszta Laden Wetterau">
                 </div>
-                <div class="article-wrapper">
-                    <div class="article-box">
-                        <img id="open-img" src="images/shop.jpg" alt="Entrance of Puszta Laden Wetterau">
-                    </div>
-                    <div class="article-box" id="open-times">
-                        <p>Nyitva tartás</p>
-                        <ul>
-                            <li>Montag: 10:00-13:00 Uhr, 15:00-18:00 Uhr</li>
-                            <li>Dienstag: 10:00-13:00 Uhr, 15:00-18:00 Uhr</li>
-                            <li>Mittwoch: 10:00-13:00 Uhr, 15:00-18:00 Uhr</li>
-                            <li>Donnerstag: 14:00-18:00 Uhr</li>
-                            <li>Freitag: 10:00-13:00 Uhr, 15:00-18:00 Uhr</li>
-                            <li>Samstag: 10:00-15:00 Uhr</li>
-                        </ul>
-                    </div>
+                <div class="col_2_2" id="open-times">
+                    <h2>Nyitva tartás</h2>
+                    <ul>
+                        <li>Montag: 10:00-13:00, 15:00-18:00</li>
+                        <li>Dienstag: 10:00-13:00, 15:00-18:00</li>
+                        <li>Mittwoch: 10:00-13:00, 15:00-18:00</li>
+                        <li>Donnerstag: 14:00-18:00</li>
+                        <li>Freitag: 10:00-13:00, 15:00-18:00</li>
+                        <li>Samstag: 10:00-15:00</li>
+                    </ul>
                 </div>
+                <div class="clear"></div>
+                
                 <p><a class="top" href="#top" style="font-weight: 300;">Vissza az oldal elejére</a></p>
             </div>
         </div>
@@ -240,7 +194,7 @@
 <footer>
     <div id="footer">
         <div id="footer-wrapper">
-            <div class="col_1_4">
+            <div class="col_1_4 mobile-footer">
                 <p>
                     Hanauer Straße 12<br>
                     61169 Friedberg (Hessen)<br>
@@ -248,7 +202,7 @@
                     
                 </p>
             </div>
-            <div class="col_1_4">
+            <div class="col_1_4 mobile-footer">
                 <p>Tel.: +49 176 64674500</p>
             </div>
             <div class="col_1_4">
@@ -261,20 +215,6 @@
     </div>
    
 </footer>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="scripts/scripts.js"></script>
-
-<script type='text/javascript'>
-    $(document).ready(function(){
-
-        $('a.top').click(function () {
-            $('body,html').animate({scrollTop: 0}, 600);
-                return false;
-            });
-
-    });
-</script>
 
 </body>
 </html>
