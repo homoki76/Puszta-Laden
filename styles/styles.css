@@ -166,16 +166,6 @@ ul#lang-dd li {
 #green a {
     color: #fff;
 }
-/* - Mobile Navigation - */
-#mobile-dropdown {
-    display: none;
-}
-#ham-icon {
-    display: none;
-}
-#close-icon {
-    display: none;
-}
 
 /* - Side section - */
 .col_1_5 h2 {
@@ -401,6 +391,20 @@ ul#contact-list li {
 #info-page #open-times h2 {
     margin: 0;
 }
+
+/* - Mobile navigation - */
+#mobile-dropdown {
+    position: absolute;
+    top: 150px;
+    display: none;
+}
+#ham-icon {
+    display: none;
+}
+#close-icon {
+    display: none;
+}
+
 /* - Footer - */
 #footer {
     clear: both;
