@@ -60,23 +60,16 @@
         </div>
 
         <!-- Mobile navigation -->
-        <img id="ham-icon" width="55" height="50" src="images/hamburger-icon.png" alt="Hamburger Icon">
-        <img id="close-icon" width="55" height="50" src="images/close-icon.png" alt="Close Icon">
+        <img id="ham-icon" width="32" height="30" src="images/hamburger-icon.png" alt="Hamburger Icon">
+        <img id="close-icon" width="32" height="30" src="images/close-icon.png" alt="Close Icon">
         <div id="mobile-dropdown">
             <ul>
                 <li><a href="actual.html">Aktuális</a></li>
                 <li><a href="products.html">Termékek</a></li>
                 <li><a href="info.html">Információ</a></li>
-                <li><a href="gallery.html">Galéria</a></li>
-                <li><img src="images/globe.png" width="21" height="21">
-                    <ul id="lang-dd">
-                        <li>
-                            <a href="german.html"><img src="images/flag-de.png" width="18" height="14" alt="German flag">DE</a>
-                        </li>
-                        <li>                            
-                            <a href="english.html"><img src="images/flag-uk.png" width="18" height="14" alt="German flag">EN</a>
-                        </li>
-                    </ul>
+                <li>
+                    <a href="german.html"><img src="images/flag-de.png" width="18" height="14" alt="German flag">DE</a>
+                    <a href="english.html"><img src="images/flag-uk.png" width="18" height="14" alt="German flag">EN</a>
                 </li>
             </ul>
         </div>
@@ -138,7 +131,7 @@
 <footer>
     <div id="footer">
         <div id="footer-wrapper">
-            <div class="col_1_4">
+            <div class="col_1_4 mobile-footer">
                 <p>
                     Hanauer Straße 12<br>
                     61169 Friedberg (Hessen)<br>
@@ -146,7 +139,7 @@
                     
                 </p>
             </div>
-            <div class="col_1_4">
+            <div class="col_1_4 mobile-footer">
                 <p>Tel.: +49 176 64674500</p>
             </div>
             <div class="col_1_4">
@@ -160,8 +153,38 @@
    
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="scripts/scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
+<script>
+
+//Mobile Dropdown
+    $('#ham-icon').css('cursor', 'pointer');
+    $('#close-icon').css('cursor', 'pointer');
+
+    $('#ham-icon').click(function () {
+        $("#ham-icon").css({ "display": "none" });
+        $("#close-icon").css({ "display": "block" });
+        $('#mobile-dropdown').slideToggle("slow");
+        });
+
+    $('#close-icon').click(function () {
+        $("#close-icon").css({ "display": "none" });
+        $("#ham-icon").css({ "display": "block" });
+        $('#mobile-dropdown').slideToggle("slow");
+        });
+    
+    //Disable right click
+    $(document).ready(function () {
+
+    $("img").on("contextmenu",function(e){
+        return false;
+    });
+
+    $("img").on("dragstart",function(e){
+        return false;
+        });              
+    }); 
+</script>
 </body>
 </html>

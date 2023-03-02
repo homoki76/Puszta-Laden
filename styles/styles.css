@@ -267,15 +267,14 @@ h2 img {
 .col_1_2 #open-img  {
     box-shadow: 0px 0px 5px 1px #000000;
     max-width: 80%;
-    margin-top: 0;
+    margin-top: -20px;
 }
 #open-times-wrapper {
     width: 100%;
     height: 310px;
 }
 #open-times {
-    padding: 10px;
-    margin: 45px 0 20px; 
+    padding: 20px 0 80px;
 }
 #open-times h2 {
     text-align: left;
@@ -325,8 +324,13 @@ main .col_4_5 h2 {
     color: #252424;
 }
 
+/* - Actual sales page - */
+
 
 /* - Products page - */
+#mobile-product-container {
+    display: none;
+}
 #products-page .col_4_5 section {
     height: 400px;
 }
@@ -353,13 +357,16 @@ ul#sidebar-nav li a:hover {
 .col_1_2 h1, .col_1_2 p {
     text-align: left;
 }
+#dried-products h1 {
+    line-height: 50px;
+    padding: 40px 0;
+}
 
 /* - Information page - */
 #info-page .col_1_5, #info-page #sidebar-container {
     height: 2900px;
 }
 .mapouter {
-    display: block;
     margin: 80px auto 0;
 }
 #info-page section {
@@ -399,16 +406,44 @@ ul#contact-list li {
 
 
 /* - Mobile navigation - */
-#mobile-dropdown {
-    position: absolute;
-    top: 150px;
-    display: none;
-}
 #ham-icon {
     display: none;
+    position: absolute;
+    right: 5%;
 }
 #close-icon {
     display: none;
+    position: absolute;
+    right: 5%;
+}
+#mobile-dropdown {
+    display: none;
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    top: 150px;
+}
+#mobile-dropdown ul {
+    list-style-type: none;  
+}
+#mobile-dropdown ul li {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+    font-size: 1.375em;
+    color: #6e6e6e;
+    background: #fff;
+    border-bottom: 1px solid #6e6e6e;
+}
+#mobile-dropdown ul li:last-child {
+    border-bottom: none;
+}
+#mobile-dropdown ul li img {
+    margin: 0 10px 1px;
+}
+#mobile-dropdown ul li a:hover {
+    color: #ef3b39;
 }
 
 /* - Footer - */
