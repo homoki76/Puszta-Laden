@@ -235,6 +235,8 @@ h2 img {
     box-shadow: 0px 0px 3px 0px #2eaf2e;
     padding: 20px;
     border-radius: 5px;
+    position: relative;
+    height: 370px;
 }
 .news-box h3 {
     font-weight: 300;
@@ -246,12 +248,11 @@ h2 img {
     margin-bottom: 30px;
     font-weight: 300;
 }
-.article-button {
+.article-button, .teaser-button {
     padding: 5px 15px;
     background: #f53a3a;
     color: #fff;
     display: inline-block;
-    margin-top: 55px;
     border-radius: 5px;
     border: 1px solid #f53a3a;
     transition: 0.3s;
@@ -259,10 +260,17 @@ h2 img {
     font-weight: 300;
     letter-spacing: 0.5px;
 }
-.article-button:hover {
+.article-button {
+    position: absolute;
+    bottom: 20px;
+}
+.article-button:hover, .button:hover {
     background-color: #fff;
     color: #f53a3a;
     transition: 0.3s;
+}
+.teaser-button {
+    margin-top: 50px;
 }
 .col_1_2 #open-img  {
     box-shadow: 0px 0px 5px 1px #000000;
@@ -335,7 +343,7 @@ main .col_4_5 h2 {
     height: 400px;
 }
 #sidebar-container {
-    height: 3100px
+    height: 2700px
 }
 ul#sidebar-nav {
     position: sticky;
@@ -361,6 +369,13 @@ ul#sidebar-nav li a:hover {
     line-height: 50px;
     padding: 40px 0;
 }
+#products-page .col_4_5 .col_1_2 img, #products-page .col_4_5 .col_2_2 img {
+    width: 100%;
+}
+#products-page .col_4_5 .col_1_2 h1, #products-page .col_4_5 .col_2_2 h1 {
+    margin-top: 25px;
+}
+
 
 /* - Information page - */
 #info-page .col_1_5, #info-page #sidebar-container {
