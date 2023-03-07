@@ -12,6 +12,8 @@
         margin-left: 10px;
         font-size: 26px;
     }
+
+    /* - Main - */
     #navi-box {
         width: 500px;
     }
@@ -29,6 +31,7 @@
         display: none;
     }
 
+    
     /* - Main - */
     .col_1_5 {
         display: none;
@@ -37,7 +40,10 @@
         width: 100%;
     }
     h1#main-title {
-        font-size: 34px;
+        font-size: 36px;
+    }
+    h2#mobile-title {
+        padding: 0 40px;
     }
     .col_2_2 img#paprika-img {
         margin-top: 80px;
@@ -46,16 +52,30 @@
         width: 80%;
     }
     .top {
+        text-align: center;
         display: block;
         width: 160px;
         margin: 0 auto 20px;
         position: static;
     }
 
+    /* - Actual page - */
+    #actual-page .col_4_5 h1 {
+        margin-top: 30px;
+        line-height: 50px;
+    }
+    #actual-page .top-actual {
+        display: none;
+    }
+
     /* - Footer - */
     #footer, #footer-wrapper {
         display: block;
         height: 280px;
+    }
+    .footer-bottom {
+        position: fixed;
+        bottom: 0;
     }
     #footer {
         padding-bottom: 0;
@@ -94,6 +114,9 @@
     #products-page section .col_1_2 img, #products-page section .col_2_2 img {
         margin-top: 110px;
     }
+    .news-box {
+        height: 440px;
+    }
 }
 
 @media only screen and (max-width: 850px) {
@@ -121,6 +144,9 @@
         background: #6e6e6e;
         color: #fff;
     }
+    .news-box {
+        height: 480px;
+    }
 }
 
 @media only screen and (max-width: 759px) {
@@ -144,7 +170,7 @@
         display: block;
     }
     .col_4_5 h1 {
-        font-size: 28px;
+        font-size: 26px;
     }
     .col_4_5 p, .col_1_2 h1 {
         text-align: center;
@@ -158,8 +184,10 @@
         margin: -80px auto 0;
     }
     .article-button  {
-        margin-top: 35px;
+        position: static;
+        margin: 30px auto 10px;
     }
+    
     #open-times h2 {
         margin-top: 20px;
         display: block;
@@ -184,6 +212,7 @@
     .news-box {
         clear: both;
         width: 80%;
+        height: auto;
         text-align: center;
         margin: 30px auto;
     }
@@ -197,6 +226,43 @@
         margin: 0 auto 20px;
         position: static;
     }
+
+    /* - Info Page - */
+    #get-to .mapouter {
+        width: 300px;
+        height: 300px;
+        text-align: left;
+    }
+    #get-to .gmap_canvas {
+        width: 300px;
+        height: 300px;
+    }
+    .mapouter iframe {
+        width: 300px;
+        height: 300px;
+    }
+    #open-times-section {
+        background: #a8a6a6;
+        color: #fff;
+        text-align: center;
+    }
+    #info-page #open-times {
+        width: 100%;
+    }
+    #contact {
+        background: #a8a6a6;
+        color: #fff;
+        padding-bottom: 45px;
+    }
+    #info-page #about-us {
+        text-align: center;
+    }
+    #info-page #about-us img {
+        width: 100%;
+        margin: 40px 0 50px;
+    }
+
+    /* - Footer - */
     footer {
         height: 400px;
     }
@@ -232,37 +298,5 @@
         
     }
     
-    /* - Info Page - */
-    #get-to .mapouter {
-        width: 300px;
-        height: 300px;
-        text-align: left;
-    }
-    #get-to .gmap_canvas {
-        width: 300px;
-        height: 300px;
-    }
-    .mapouter iframe {
-        width: 300px;
-        height: 300px;
-    }
-    #open-times-section {
-        background: #a8a6a6;
-        color: #fff;
-        text-align: center;
-    }
-    #info-page #open-times {
-        width: 100%;
-    }
-    #contact {
-        background: #a8a6a6;
-        color: #fff;
-        padding-bottom: 45px;
-    }
-    #info-page #about-us {
-        text-align: center;
-    }
-    #info-page #about-us img {
-        margin: 40px 0 50px;
-    }
+    
 }
