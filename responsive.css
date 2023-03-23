@@ -1,0 +1,307 @@
+/* - Responsive - */
+@media only screen and (max-width: 1200px) {
+    
+    /* - Header - */
+    #header {
+        justify-content: space-around;
+    }
+    #header #pattern {
+        display: none;
+    }
+    #header h1 {
+        margin-left: 10px;
+        font-size: 26px;
+    }
+
+    /* - Main - */
+    #navi-box {
+        width: 500px;
+    }
+    ul#navigation {
+        justify-content: flex-end;
+    }
+    ul#navigation li {
+        margin-left: 5%;
+    }
+    ul#navigation li:first-child {
+        margin-left: 0;
+    }
+    
+    .info-box-header:first-child {
+        display: none;
+    }
+
+    
+    /* - Main - */
+    .col_1_5 {
+        display: none;
+    }
+    .col_4_5 {
+        width: 100%;
+    }
+    h1#main-title {
+        font-size: 36px;
+    }
+    h2#mobile-title {
+        padding: 0 40px;
+    }
+    .col_2_2 img#paprika-img {
+        margin-top: 80px;
+    }
+    .slideshow-container {
+        width: 80%;
+    }
+    .top {
+        text-align: center;
+        display: block;
+        width: 160px;
+        margin: 0 auto 20px;
+        position: static;
+    }
+
+    /* - Actual page - */
+    #actual-page .col_4_5 h1 {
+        margin-top: 30px;
+        line-height: 50px;
+    }
+    #actual-page .top-actual {
+        display: none;
+    }
+
+    /* - Footer - */
+    #footer, #footer-wrapper {
+        display: block;
+        height: 280px;
+    }
+    .footer-bottom {
+        position: fixed;
+        bottom: 0;
+    }
+    #footer {
+        padding-bottom: 0;
+    }
+    #footer-wrapper {
+        padding: 20px;
+    }
+    #footer #footer-wrapper .col_1_4 {
+        text-align: center;
+        width: 100%;
+        height: 30px;
+        display: block;
+        padding: 20px;
+    }
+    #footer #footer-wrapper .col_1_4:first-child {
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    #footer #footer-wrapper .col_1_4:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    #footer #footer-wrapper .col_1_4:nth-child(3),#footer #footer-wrapper .col_1_4:nth-child(4) {
+        display: inline-block;
+        width: 48%;
+    }
+    #footer #footer-wrapper .col_1_4:nth-child(3) a,#footer #footer-wrapper .col_1_4:nth-child(4) a {
+        padding: 8%;
+    }
+    #footer #footer-wrapper span {
+        display: none;
+    }
+} 
+
+@media only screen and (max-width: 1050px) {
+    
+    #products-page section .col_1_2 img, #products-page section .col_2_2 img {
+        margin-top: 110px;
+    }
+    .news-box {
+        height: 440px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    /* - Product Page - */
+    #products-page .col_4_5 {
+        display: none;
+    }
+    #mobile-product-container {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #mobile-product-container section {
+        padding: 0 15px 50px;
+        background: #a8a6a6;
+        color: #fff;
+    }
+    #mobile-product-container img {
+        z-index: 2;
+        margin: -20px 0 80px;
+        width: 85%;
+    }
+    #dairy-products {
+        background: #6e6e6e;
+        color: #fff;
+    }
+    .news-box {
+        height: 480px;
+    }
+}
+
+@media only screen and (max-width: 759px) {
+    #header #pattern, .info-box-header, .col_1_5, #navi-box, #main-title, #mobile-title img {
+        display: none;
+    }
+    #pattern-mobile {
+        display: block;
+        width: 20%;
+        height: auto;
+        margin: 35px auto -50px;
+    }
+    #header h1 {
+        width: 100%;
+        text-align: left;
+        margin-left: 5%;
+        font-size: 26px;
+    }
+    .col_4_5, .col_1_2, .col_2_2 {
+        width: 100%;
+        display: block;
+    }
+    .col_4_5 h1 {
+        font-size: 26px;
+    }
+    .col_4_5 p, .col_1_2 h1 {
+        text-align: center;
+    }
+    .col_2_2 img {
+        width: 85%;
+        margin: 20px 0 40px;
+    }
+    .col_1_2 #open-img  {
+        width: 85%;
+        margin: -80px auto 0;
+    }
+    .article-button  {
+        position: static;
+        margin: 30px auto 10px;
+    }
+    
+    #open-times h2 {
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+    .col_1_2, .col_2_2 {
+        width: 100%;
+        text-align: center;
+    }
+    #mobile-title {
+        display: block;
+        margin: 50px 0 0;
+        line-height: 40px;
+        font-size: 32px;
+        text-align: center;
+    }
+    #news-wrapper {
+        width: 100%;
+        margin-top: 50px;
+        display: block;
+    }
+    .news-box {
+        clear: both;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin: 30px auto;
+    }
+    .news-box p {
+        width: 90%;
+        text-align: center;
+    }
+    #mobile-product-container #alcoholic-beverages h1 {
+        font-size: 26px;
+    }
+    .top {
+        display: block;
+        width: 160px;
+        margin: 0 auto 20px;
+        position: static;
+    }
+
+    /* - Info Page - */
+    #get-to .mapouter {
+        width: 300px;
+        height: 300px;
+        text-align: left;
+    }
+    #get-to .gmap_canvas {
+        width: 300px;
+        height: 300px;
+    }
+    .mapouter iframe {
+        width: 300px;
+        height: 300px;
+    }
+    #open-times-section {
+        background: #a8a6a6;
+        color: #fff;
+        text-align: center;
+    }
+    #info-page #open-times {
+        width: 100%;
+    }
+    #contact {
+        background: #a8a6a6;
+        color: #fff;
+        padding-bottom: 45px;
+    }
+    #info-page #about-us {
+        text-align: center;
+    }
+    #info-page #about-us img {
+        width: 100%;
+        margin: 40px 0 50px;
+    }
+
+    /* - Footer - */
+    
+    #footer, #footer-wrapper {
+        display: block;
+        height: 370px;
+    }
+    #footer #footer-wrapper .col_1_4 {
+        text-align: center;
+        width: 100%;
+        height: 80px;
+        display: block;
+    }
+    #footer #footer-wrapper .col_1_4:first-child {
+        height: 80px;
+        margin-bottom: 15px;
+        padding-top: 0;
+    }
+    #footer #footer-wrapper .col_1_4:nth-child(2) {
+        margin-bottom: -30px;
+    }
+    #footer #footer-wrapper .col_1_4:nth-child(3),#footer #footer-wrapper .col_1_4:nth-child(4) {
+        display: block;
+        width: 100%;
+        height: 100px;
+    }
+    #footer #footer-wrapper .col_1_4:nth-child(3) a,#footer #footer-wrapper .col_1_4:nth-child(4) a {
+        padding: 5px 0;
+        display: block;
+    }
+    .footer-bottom #footer-wrapper {
+    }
+    
+    /* - Mobile Navigation - */
+    #ham-icon {
+        display: block;
+        
+    }
+    
+    
+}
