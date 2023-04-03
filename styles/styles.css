@@ -236,7 +236,7 @@ h2 img {
     padding: 25px 20px 20px;
     border-radius: 5px;
     position: relative;
-    height: 340px;
+    height: 365px;
 }
 .news-box h3 {
     font-weight: 300;
@@ -325,7 +325,7 @@ main .col_4_5 h2 {
 }
 .top {
     position: absolute;
-    bottom: 150px;
+    bottom: 220px;
     left: 50%;
 }
 .top:hover {
@@ -333,8 +333,15 @@ main .col_4_5 h2 {
 }
 
 /* - Actual sales page - */
-
-
+.top-actual {
+    display: none;
+}
+aside .short-sidebar-container, aside .short-sidebar-container #sidebar-container {
+    height: 500px;
+}
+#actual-page {
+    height: 100px;
+}
 /* - Products page - */
 #mobile-product-container {
     display: none;
@@ -365,7 +372,7 @@ ul#sidebar-nav li a:hover {
 .col_1_2 h1, .col_1_2 p {
     text-align: left;
 }
-#dried-products h1 {
+#dried-products h1, #meat-products h1 {
     line-height: 50px;
     padding: 40px 0;
 }
@@ -468,7 +475,7 @@ ul#contact-list li {
     clear: both;
     width: 100%;
     background: #2eaf2e;
-    height: 140px;
+    height: 150px;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -502,5 +509,31 @@ ul#contact-list li {
 .footer-bottom {
     position: fixed;
     width: 100%;
+    bottom: 20px;
+}
+#copyright-box a {
+    color: #2eaf2e;
+    font-weight: 400;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    height: 40px;
+    padding: 10px 0;
+}
+.copyright-bottom {
+    position: absolute;
     bottom: 0;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 15px;
+}
+/* - Under construction - */
+#under-construction {
+    width: 100%;
+    height: 73.5vh;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
 }
